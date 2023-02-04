@@ -1,0 +1,60 @@
+:root {
+  --pretty-modal-modal-container-background-color: #23222d;
+  --pretty-modal-modal-container-border-radius: 10px;
+}
+
+body {
+  background: #161616;
+}
+
+.btn-outline-warning {
+  color: #3EB8B4;
+  border-color: #3EB8B4;
+}
+
+.btn-outline-warning:focus {
+  box-shadow: 0 0 0 0.2rem #3EB8B4;
+  -webkit-box-shadow: 0 0 0 0.2rem #3EB8B4;
+  outline: 0;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:active {
+  color: #fff;
+  background-color: #3EB8B4;
+  border-color: #3EB8B4;
+}
+
+.form-input {
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  color: #3EB8B4;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
