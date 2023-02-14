@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import Congratulation from "./Congratulation";
-import CountryCode from "./CountryCode";
+import CountryCode from "./Sourcefiles/CountryCode";
 import { useTimer } from "react-timer-hook";
 import { EncryptStorage } from "encrypt-storage";
 import authentication from "../firebaseConfig";
@@ -211,12 +211,8 @@ const Register = ({ Code }) => {
       "recaptcha-container",
       {
         size: "invisible",
-        callback: (response) => {
-      
-        },
-        "expired-callback": () => {
-       
-        },
+        callback: (response) => {},
+        "expired-callback": () => {},
       },
       auth
     );
@@ -229,7 +225,7 @@ const Register = ({ Code }) => {
       })
       .catch((error) => {
         toast.warn(
-          "Something suspecious, please close and Re-Open the Registration Page.",
+          "Something suspicious, please close and Re-Open the Registration Page.",
           { theme: "dark" }
         );
         console.log(error);
